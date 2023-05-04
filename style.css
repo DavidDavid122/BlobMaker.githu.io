@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    color: #010120;
+    outline: none;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    background-color: #43494e;
+}
+
+.wrapper {
+    position: absolute;
+    width: 45%;
+    top: 50%;
+    left: 50%;
+    min-width: 550px;
+    background: linear-gradient(-135deg, #8f7d7d, #000000); 
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+
+.output {
+    position: relative;
+    display: grid;
+    width: 100%;
+    min-height: 250px;
+    background: linear-gradient(-135deg, #ebe5e5, #9b9a9a); 
+    border-radius: 5px;
+    place-items: center;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+#blob {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(-135deg, #0540e0, #0018f3); 
+    box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dimensions {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0 40px 0;
+}
+
+label {
+    font-weight: 500;
+}
+
+input[type="number"] {
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #a0a0b0;
+    padding: 10px;
+}
+
+input[type="number"]:focus {
+    color: #025eaa;
+    background-color: #f1f5fa;
+    border-color: #025eaa;
+}
+
+.sliders {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+input[type="text"] {
+    width: 82%;
+    background-color: #f1eff9;
+    border-radius: 3px;
+    margin-top: 50px;
+    font-size: 12px;
+    border: none;
+    padding: 10px;
+
+}
+
+button {
+    width: 12%;
+    color: #ffffff;
+    background-color: #0075ff;
+    font-size: 12px;
+    border-radius: 3px;
+    border: none;
+    margin-left: 4%;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+#copy:hover {
+    background-color: #164780;
+}
